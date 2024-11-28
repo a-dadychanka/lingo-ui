@@ -1,0 +1,10 @@
+node_modules
+# Ignore artifacts:
+build
+coverage
+
+# Ignore IDE
+.idea
+
+# Next
+.next
