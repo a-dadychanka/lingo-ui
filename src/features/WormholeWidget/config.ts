@@ -6,9 +6,12 @@ export const WORMHOLE_WIDGET_CONFIG: WormholeConnectConfig = {
     LINGO: {
       key: 'LINGO',
       symbol: 'LINGO',
+      // TODO: Replace with Base once address is available
       nativeChain: 'Solana',
       tokenId: {
+        // TODO: Replace with Base once address is available
         chain: 'Solana',
+        // TODO: Replace with LINGO_BASE_ADDRESS
         address: APP_CONFIG.LINGO_SOL_ADDRESS,
       },
       // TODO: Replace with actual value for LINGO coin
@@ -18,10 +21,22 @@ export const WORMHOLE_WIDGET_CONFIG: WormholeConnectConfig = {
       decimals: 9,
     },
   },
-  chains: ['Solana', 'Ethereum', 'Bsc'],
+  // TODO: Uncomment once address of smart-contract on Base is available
+  // wrappedTokens: {
+  //   LINGO: {
+  //     Solana: APP_CONFIG.LINGO_SOL_ADDRESS,
+  //   },
+  // },
+  network: APP_CONFIG.WORMHOLE_NETWORK,
+  chains: [
+    'Solana',
+    'Base',
+    // Base testnet
+    'BaseSepolia',
+  ],
   rpcs: {
     Solana: APP_CONFIG.SOLANA_PROVIDER,
-    Ethereum: APP_CONFIG.ETH_PROVIDER,
-    Bsc: APP_CONFIG.BSC_PROVIDER,
+    Base: APP_CONFIG.BASE_PROVIDER,
+    BaseSepolia: APP_CONFIG.BASE_TESTNET_PROVIDER,
   },
 } as const;
