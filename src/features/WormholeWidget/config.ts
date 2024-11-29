@@ -14,8 +14,7 @@ export const WORMHOLE_WIDGET_CONFIG: WormholeConnectConfig = {
         // TODO: Replace with LINGO_BASE_ADDRESS
         address: APP_CONFIG.LINGO_SOL_ADDRESS,
       },
-      // TODO: Replace with actual value for LINGO coin
-      icon: 'https://assets.coingecko.com/coins/images/4128/standard/solana.png?1718769756',
+      icon: '/$LINGO.svg',
       // TODO: Replace with actual value for LINGO coin
       coinGeckoId: 'solana',
       decimals: 9,
