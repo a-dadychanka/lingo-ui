@@ -24,11 +24,11 @@ export const WORMHOLE_WIDGET_CONFIG: WormholeConnectConfig = {
          LINGO: [
            {
              chain: 'BaseSepolia',
-             manager: '0x6aD1422533Ff4BC90706511374F3b591dd9A7BaE',
+             manager: '0x534C3ee6A744578430b29ccE0628568239F2206B',
              token: '0x1b0981608F8D5Fb22fa38Bd445a877938cBf90FA',
              transceiver: [
                {
-                 address: '0xeA8D34fa9147863e486d2d07AB92b8218CF58C0E',
+                 address: '0x36D804A36ddb96fA81945100e1dB3Fbc26c1c037',
                  type: 'wormhole',
                },
              ],
